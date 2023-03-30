@@ -1,0 +1,76 @@
+.header {
+  width: 100%;
+  background-color: rgba(71, 92, 122, 0.904);
+  border-bottom: 5px solid lightblue;
+  padding-top: 10px;
+  padding-bottom: 7px;
+  overflow: hidden;
+  z-index: 50;
+}
+.sticky-header {
+  position: sticky;
+  top: 0;
+}
+.navbar {
+  max-width: 90rem;
+  margin: 0px auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar .title a {
+  font-weight: 900;
+  color: white;
+  text-decoration: none;
+  font-size: 1.3rem;
+  padding-left: 20px;
+}
+.navigation-menu {
+  display: flex;
+  padding-top: 1px;
+}
+.navigation-menu li {
+  list-style-type: none;
+  font-size: 1.3rem;
+}
+.menu-btn {
+  text-decoration: none;
+  padding: 8px 30px;
+  border-radius: 7px 7px 0px 0px;
+  position: relative;
+  color: white;
+}
+.menu-btn:hover {
+  color: rgb(224, 224, 224);
+}
+.menu-btn::after {
+  content: "";
+  display: block;
+  height: 10px;
+  width: 10px;
+  transform: rotate(47deg);
+  position: absolute;
+  left: -3px;
+  bottom: -6px;
+}
+.menu-btn::before {
+  content: "";
+  display: block;
+  height: 10px;
+  width: 10px;
+  transform: rotate(-47deg);
+  position: absolute;
+  right: -3px;
+  bottom: -6px;
+}
+
+.selected {
+  background-color: lightblue;
+  color: rgb(46, 46, 46) !important;
+}
+.selected::before {
+  background-color: lightblue;
+}
+.selected::after {
+  background-color: lightblue;
+}

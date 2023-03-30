@@ -1,0 +1,7 @@
+.app {
+  width: 100%;
+}
+.container-body {
+  max-width: 90rem;
+  margin: 0px auto;
+}

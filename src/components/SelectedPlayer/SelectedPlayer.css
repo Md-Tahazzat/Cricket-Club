@@ -1,0 +1,43 @@
+.selected-player-container {
+  display: flex;
+  width: 90%;
+  margin-inline: auto;
+  border: 2px solid lightblue;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #726eff;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  padding: 5px;
+  color: whitesmoke;
+  position: relative;
+  box-shadow: 2px 2px 6px lightgray;
+  transition: all 0.25s;
+}
+.selected-player-container:hover {
+  box-shadow: 2px 5px 15px -2px rgb(114, 114, 114);
+  width: 95%;
+}
+
+.selected-player-container img {
+  width: 25%;
+  margin-left: 20px;
+  height: 70px;
+  border-radius: 50%;
+}
+.selected-player-container button {
+  margin-right: 10px;
+  padding: 5px 10px;
+  border-radius: 4px;
+  border: none;
+  background-color: white;
+  font-weight: bold;
+  color: black;
+}
+.selected-player-container button:hover {
+  color: rgb(66, 73, 81);
+}
+
+.toast-container {
+  margin-top: 20px;
+}
