@@ -23,7 +23,7 @@ const PlayersContainer = () => {
     const isExist = selectedPlayers.find((player) => player.id == newPlayer.id);
 
     if (isExist) {
-      toast.warning("This player already added");
+      toast.warning(`${newPlayer.name} is already selected`);
       return;
     }
 
